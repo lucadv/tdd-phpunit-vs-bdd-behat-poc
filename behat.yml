@@ -1,0 +1,7 @@
+# behat.yml
+default:
+    paths:
+        features: test/acceptance-tests/features
+    context:
+        class:      FeaturesContext          # The context class
+  
