@@ -36,7 +36,7 @@ class FeaturesContext extends BehatContext
     */
    public function iInstantiateANewCruise($cruiseName)
    {
-   		$this->cruise= new Cruise();
+   	$this->cruise= new Cruise();
        	$this->cruise->setName($cruiseName);
    }
    
@@ -45,10 +45,10 @@ class FeaturesContext extends BehatContext
     */
    public function iInstantiateANewShipAndAttachItToTheCruise($shipName)
    {
-   		$this->ship= new Ship();
-   		$this->ship->setName($shipName);
-   	    $this->cruise->setShip($this->ship);
-   		$this->ship->attach($this->cruise);
+   	$this->ship= new Ship();
+   	$this->ship->setName($shipName);
+   	$this->cruise->setShip($this->ship);
+   	$this->ship->attach($this->cruise);
    }
    
    /**
@@ -56,11 +56,11 @@ class FeaturesContext extends BehatContext
     */
    public function iCheckTheExtendedNameOfTheCruise($expectedName)
    {
-   		$actualName= $this->cruise->getExtendedName();
+   	$actualName= $this->cruise->getExtendedName();
    		
-   		if($expectedName != $actualName){
-   			throw new BehaviorException("We were expecting the name of the cruise to be $expectedName but we got $actualName");
-   		}
+   	if($expectedName != $actualName){
+   		throw new BehaviorException("We were expecting the name of the cruise to be $expectedName but we got $actualName");
+   	}
    }
    
    /**
@@ -68,7 +68,7 @@ class FeaturesContext extends BehatContext
     */
    public function iChangeTheNameOfTheShip($shipName)
    {
-   		$this->ship->setName($shipName);
+   	$this->ship->setName($shipName);
    }
    
    
