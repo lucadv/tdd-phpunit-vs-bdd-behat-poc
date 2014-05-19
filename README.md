@@ -16,10 +16,6 @@ Assuming that you are in an unix environment and that you already have php 5.3+ 
 ###Download dependencies:
 ######composer install
 
-###Download selenium webdrivers
-######If you want mink to be able to open your browser and run tests in that environment then you have to download latest selenium server webdriver from here http://docs.seleniumhq.org/download/ and run it with the command:
-######java -jar selenium-server-*.jar
-
 ##Run tests
 ######bin/behat 
 ######bin/phpunit
