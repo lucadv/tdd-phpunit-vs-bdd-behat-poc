@@ -19,3 +19,5 @@ Assuming that you are in an unix environment and that you already have php 5.3+ 
 ##Run tests
 ######bin/behat 
 ######bin/phpunit
+
+test 1
